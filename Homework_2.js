@@ -64,11 +64,9 @@ EX_4
 
 function getmaxprod(arr){
 let maxprod=-Infinity;
-let currentprod;
   for(let i=0; i<arr.length; i++){
-    currentprod=arr[i]*arr[i+1];
-    if(currentprod>maxprod){
-    maxprod=currentprod;
+    if(maxprod<arr[i]*arr[i+1]){
+    maxprod=arr[i]*arr[i+1];
     }
   }
   return maxprod;
