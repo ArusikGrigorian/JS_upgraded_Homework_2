@@ -64,7 +64,7 @@ EX_4
 
 function getmaxprod(arr){
 let maxprod=-Infinity;
-  for(let i=0; i<arr.length; i++){
+  for(let i=0; i<arr.length-1; i++){
     if(maxprod<arr[i]*arr[i+1]){
     maxprod=arr[i]*arr[i+1];
     }
@@ -80,7 +80,7 @@ EX_5
 function retcount(arr){
   return (Math.max.apply(null,arr)-Math.min.apply(null,arr))-arr.length+1;
 }
-console.log(retcount([10, -5, 20, 8]));
+retcount([10, -5, 20, 8]);
 
 
 
